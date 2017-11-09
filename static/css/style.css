@@ -9,6 +9,21 @@ body, input, button{
 body{
     background: #cfcfcf;
     padding: 100px 0 0 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    position: fixed;
+}
+
+body.gameDisplay{
+    background: #cfcfcf;
+    padding: 25px 0 0 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    position: fixed;
 }
 
 .formular{
@@ -68,14 +83,49 @@ header.game{
     padding: 5px;
 }
 
-div.display{
-    background-color: orange;
-    height: 500;
+
+table.display{
+    font-family: Arial;
+    left: 0;
+    z-index: 5;
     width: 100%;
+    height: 200px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+table.buttons{
+    font-family: Arial;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    background-color: darkgrey;
 }
 
 
+tr.row1{
+    font-size: 20px;
+}
+
+tr.row2{
+    font-size: 100px;
+}
+
+tr.row3{
+    font-size: 25px;
+}
+
+th.playerName1{
+    padding-top: 10px;
+}
+
+th.playerName2{
+    padding-top: 10px;
+}
 
 
-
-    

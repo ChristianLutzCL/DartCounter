@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="static/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
-<body>
-    <header class="game" >
-        <p class="text">{{ mode }} | {{ points }}</p>
-    </header>
-    <div class="display">
-    </div>
-</body>
+        <link rel="stylesheet" type="text/css" href="static/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body class="gameDisplay">
+        <header class="game" >
+            <p class="text">{{ mode }} | {{ points }}</p>
+        </header>
+        <table class="display">
+            <tr class="row1"><th class="playerName1">Player1</th><th class="playerName2">Player2</th></tr>
+            <tr class="row2"><th class="playerPoints1">501</th><th class="playerPoints2">501</th></tr>
+            <tr class="row3"><th class="playerAverege1">45.0</th><th class="playerAverege2">45.0</th></tr>
+        </table>
+        <table class="buttons">
+            <tr class=""><th class="">DOUBLE</th><th class="">TRIPLE</th></tr>
+            <tr class=""><th class="">1</th><th class="">1</th><th class="">1</th></tr>
+            <tr class=""><th class="">2</th><th class="">2</th><th class="">2</th></tr>
+            <tr class=""><th class="">3</th><th class="">3</th><th class="">3</th></tr>
+            <tr class=""><th class="">4</th><th class="">4</th><th class="">4</th></tr>
+            <tr class=""><th class="">5</th><th class="">5</th><th class="">5</th></tr>
+            <tr class=""><th class="">6</th><th class="">6</th><th class="">6</th></tr>
+            <tr class=""><th class="">7</th><th class="">7</th><th class="">7</th></tr>
+            <tr class=""><th class="">DANEBEN</th><th class="">UNDO</th></tr>
+        </table>
+    </body>
 </html>

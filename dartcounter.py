@@ -17,10 +17,7 @@ class Game:
         self.mode = ["Single Out", "Double Out"]
         self.points = [301, 401, 501, 601, 701, 801]
 
-
-
 dings = Game()
-
 
 
 # Menu Route
