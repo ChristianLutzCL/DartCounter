@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from flask_debugtoolbar import DebugToolbarExtension
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
@@ -29,6 +29,7 @@ def menu():
             points = dings.points
             return render_template("index.html", players=players, mode=mode, points=points)
 
+
 # Game Route
 @app.route("/game", methods=["GET", "POST"])
 def game():
@@ -39,10 +40,17 @@ def game():
         print("Empfangen: " + players + " - " + mode + " - " + points)
         return render_template("game.html", players=players, mode=mode, points=points)
 
+
 # Statistics Route
 @app.route("/statistics")
 def statistics():
     return render_template("statistics.html")
+
+
+@app.route('/background_process')
+def background_process():
+			return jsonify(result='You are wise')
+
 
 
 if __name__ == "__main__":
