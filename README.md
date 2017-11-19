@@ -1,6 +1,7 @@
 # DartCounter
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![1](https://github.com/LosBopfos/DartCounter/blob/master/DartCounter_Github.png)
+
 
 
 Dart Counter is a little Flask-Python application.
