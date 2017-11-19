@@ -11,11 +11,14 @@ app.secret_key = "123456"
 
 toolbar = DebugToolbarExtension(app)
 
+
 class Game:
     def __init__(self):
         self.players = [1, 2, 3, 4]
         self.mode = ["Single Out", "Double Out"]
         self.points = [301, 401, 501, 601, 701, 801]
+        self.player_rounds = 3
+
 
 dings = Game()
 
@@ -41,16 +44,17 @@ def game():
         return render_template("game.html", players=players, mode=mode, points=points)
 
 
+# Game background process
+@app.route('/background_process', methods=["POST"])
+def background_process():
+    test = "---"
+    return jsonify(result=test)
+
+
 # Statistics Route
 @app.route("/statistics")
 def statistics():
     return render_template("statistics.html")
-
-
-@app.route('/background_process')
-def background_process():
-			return jsonify(result='You are wise')
-
 
 
 if __name__ == "__main__":
