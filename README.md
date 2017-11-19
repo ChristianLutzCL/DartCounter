@@ -16,7 +16,7 @@ After a completed game, this app will show some statistics about the game and ev
 
 ---
 
-### Home Menu
+## Home Menu
 
  Dropdown menu to change the gamemode, number of players and points of a whole game.
  Checkbox to save your preference for the next game
